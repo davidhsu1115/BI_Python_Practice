@@ -348,8 +348,8 @@ def main():
     testDataPath = "irisTestData.txt"
     testDataMatrix = loadFile(testDataPath)
 
-    maxEpochs = 50
-    learnRate = 0.05
+    maxEpochs = 100
+    learnRate = 0.03
     neuralNetwork.train(trainData=trainDataMatrix, maxEpochs=maxEpochs, learnRate=learnRate)
 
     trainAccuracy = neuralNetwork.accuracy(trainDataMatrix)
